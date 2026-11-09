@@ -7269,3 +7269,13 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+/* Portfolio project cards */
+.cc-project { transition: transform .2s, box-shadow .2s; }
+.cc-project:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,.12); }
+.cc-project-icon { font-size: 28px; color: #18ce0f; }
+.cc-project .badge { font-size: 11px; padding: 5px 8px; border-radius: 10px; }
+.cc-badge-public { background: #e6f9e5; color: #12a10b; }
+.cc-badge-private { background: #eee; color: #666; }
+.cc-tags span { display: inline-block; font-size: 12px; background: #f3f3f3; color: #555; border-radius: 4px; padding: 2px 8px; margin: 0 4px 4px 0; }
+.cc-project .card-footer { font-size: 14px; }
