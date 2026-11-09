@@ -98,11 +98,6 @@
   }
   function $(id) { return document.getElementById(id); }
   function tagsHtml(tags) { return '<div class="tags">' + tags.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('') + '</div>'; }
-  function badge(repo) {
-    return repo
-      ? '<span class="badge badge--public"><i class="fa-solid fa-lock-open"></i> Public</span>'
-      : '<span class="badge"><i class="fa-solid fa-lock"></i> Private</span>';
-  }
 
   /* ---------- Featured ---------- */
   $('featured').innerHTML = FEATURED.map(function (f) {
@@ -113,7 +108,7 @@
         '<div class="win__main"><span></span><span></span><span></span><span class="wide"></span></div></div>' +
       '</div>' +
       '<div class="feat__body">' +
-        '<div class="feat__top"><span class="feat__kicker">' + esc(f.kicker) + '</span>' + badge(null) + '</div>' +
+        '<div class="feat__top"><span class="feat__kicker">' + esc(f.kicker) + '</span>' + '</div>' +
         '<h3>' + esc(f.title) + '</h3>' +
         '<p>' + esc(f.desc) + '</p>' +
         '<ul class="points">' + f.points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' +
@@ -150,7 +145,7 @@
         ? '<a class="repo" href="https://github.com/ibnunasir/' + p.repo + '" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Lihat repo</a>'
         : '';
       return '<article class="card" style="animation-delay:' + Math.min(i * 30, 300) + 'ms">' +
-        '<div class="card__top"><span class="card__icon"><i class="fa-solid ' + p.icon + '"></i></span>' + badge(p.repo) + '</div>' +
+        '<div class="card__top"><span class="card__icon"><i class="fa-solid ' + p.icon + '"></i></span>' + '</div>' +
         '<h4>' + esc(p.title) + '</h4>' +
         '<p>' + esc(p.desc) + '</p>' +
         tagsHtml(p.tags) + foot +
