@@ -7279,3 +7279,7 @@ a.credit {
 .cc-badge-private { background: #eee; color: #666; }
 .cc-tags span { display: inline-block; font-size: 12px; background: #f3f3f3; color: #555; border-radius: 4px; padding: 2px 8px; margin: 0 4px 4px 0; }
 .cc-project .card-footer { font-size: 14px; }
+.cc-stats span { display: inline-block; margin: 0 12px; color: #666; }
+.cc-stats strong { font-size: 22px; color: #18ce0f; margin-right: 4px; }
+.cc-filter .btn { background: #f3f3f3; color: #555; margin: 3px; border-radius: 20px; }
+.cc-filter .btn.active, .cc-filter .btn:hover { background: #18ce0f; color: #fff; }

@@ -156,90 +156,470 @@
 <div class="section" id="portfolio">
   <div class="container">
     <div class="h4 text-center mb-2 title">Portfolio</div>
-    <p class="text-center text-muted mb-5">Sebahagian projek yang saya bangunkan. Kebanyakan repositori adalah <strong>private</strong> (projek klien / syarikat), jadi hanya ringkasan yang dipaparkan.</p>
+    <p class="text-center text-muted mb-4">Projek yang saya bangunkan untuk klien dan syarikat. Kebanyakan repositori adalah <strong>private</strong>, jadi hanya ringkasan yang dipaparkan.</p>
+    <div class="cc-stats text-center mb-4">
+      <span><strong>70</strong> repositori</span>
+      <span><strong>41</strong> projek</span>
+      <span><strong>39</strong> private</span>
+    </div>
+    <div class="cc-filter text-center mb-4">
+      <button type="button" class="btn btn-sm active" data-filter="all">Semua</button>
+      <button type="button" class="btn btn-sm" data-filter="pos">POS & Retail</button>
+      <button type="button" class="btn btn-sm" data-filter="mgmt">Sistem Pengurusan</button>
+      <button type="button" class="btn btn-sm" data-filter="api">Integrasi & API</button>
+      <button type="button" class="btn btn-sm" data-filter="mobile">Mobile App</button>
+      <button type="button" class="btn btn-sm" data-filter="other">Lain-lain</button>
+    </div>
     <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
         <div class="card cc-project h-100">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <i class="fa fa-ticket cc-project-icon"></i>
-              <span class="badge cc-badge-public"><i class="fa fa-unlock"></i> Public</span>
-            </div>
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-cutlery cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">IziPOS</div>
+            <p>Platform POS awan multi-tenant untuk F&amp;B, runcit dan hardware. Ada inventori, pembelian, kredit pelanggan, e-Invoice LHDN dan portal pengurusan multi-cawangan.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter 4</span><span>MySQL</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-server cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">iziPOS v2</div>
+            <p>Seni bina POS multi-tenant generasi kedua: database berasingan untuk setiap syarikat, langganan modul dan 4 peranan pengguna.</p>
+            <div class="cc-tags"><span>Express.js</span><span>PostgreSQL</span><span>Docker</span><span>Flutter</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-eye cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">optoPOS</div>
+            <p>Sistem POS dengan backend dan frontend berasingan, disambungkan terus ke SQL Accounting.</p>
+            <div class="cc-tags"><span>Node.js</span><span>JavaScript</span><span>Docker</span><span>SQL Accounting</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-shopping-basket cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sistem Jualan Restoran</div>
+            <p>Sistem jualan restoran dengan print agent untuk printer dapur dan sync data jualan ke SQL Accounting.</p>
+            <div class="cc-tags"><span>Node.js</span><span>EJS</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-print cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">MultiPrinter</div>
+            <p>Print server WebSocket melalui Cloudflare Tunnel supaya web POS boleh cetak ke banyak printer thermal (ESC/POS) melalui app Android, walaupun di rangkaian lain.</p>
+            <div class="cc-tags"><span>Flutter</span><span>WebSocket</span><span>Docker</span><span>ESC/POS</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-refresh cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">MyPOS Sync API</div>
+            <p>API untuk sync inventori, jualan dan penerimaan stok antara POS desktop dan server pusat.</p>
+            <div class="cc-tags"><span>PHP</span><span>REST API</span><span>MySQL</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-cubes cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sistem Inventori Kedai</div>
+            <p>Pengurusan stok kedai: barang masuk/keluar, baki stok dan laporan inventori.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span><span>MySQL</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-star cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Member Points</div>
+            <p>Sistem mata ganjaran ahli untuk kedai runcit: kumpul dan tebus mata serta semak baki.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="pos">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-hourglass-end cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sistem Tarikh Luput</div>
+            <p>Jejak barang yang hampir tamat tempoh supaya stok boleh dijual atau dipulangkan lebih awal.</p>
+            <div class="cc-tags"><span>PHP</span><span>JavaScript</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-tags cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">JerseyOrder</div>
+            <p>Sistem order kilang jersey hujung ke hujung: terima order, design, pengeluaran ikut station (scan QR), penghantaran Pos Laju dan komisen jualan. PWA dengan push notification.</p>
+            <div class="cc-tags"><span>Vue.js</span><span>Node.js</span><span>Docker</span><span>PWA</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-building cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">JMBUrus</div>
+            <p>Sistem pengurusan JMB/MC pangsapuri untuk banyak syarikat, diurus oleh Superadmin: unit, caj penyelenggaraan dan bayaran.</p>
+            <div class="cc-tags"><span>Express.js</span><span>MySQL</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-graduation-cap cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">TuisyenKu</div>
+            <p>Sistem pengurusan pusat tuisyen: pelajar, kelas, kehadiran dan yuran.</p>
+            <div class="cc-tags"><span>Express.js</span><span>EJS</span><span>MySQL</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-truck cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Balak Track</div>
+            <p>Penjejakan balak dari matau ke lori ke pelanggan, dengan sync ke SQL Accounting. Boleh dipasang sebagai PWA.</p>
+            <div class="cc-tags"><span>Vue.js</span><span>Node.js</span><span>Docker</span><span>Swagger</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-ticket cc-project-icon"></i><span class="badge cc-badge-public"><i class="fa fa-unlock"></i> Public</span></div>
             <div class="h5">Managy</div>
-            <p>Sistem pengurusan tiket servis pelanggan &mdash; cipta, agih dan jejak status tiket sehingga selesai.</p>
-            <div class="cc-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+            <p>Sistem pengurusan tiket servis pelanggan: cipta, agih dan jejak status tiket sehingga selesai.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span><span>JavaScript</span></div>
           </div>
           <div class="card-footer bg-transparent border-0"><a href="https://github.com/ibnunasir/managy" target="_blank" rel="noopener"><i class="fa fa-github"></i> Lihat repo</a></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
         <div class="card cc-project h-100">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <i class="fa fa-university cc-project-icon"></i>
-              <span class="badge cc-badge-public"><i class="fa fa-unlock"></i> Public</span>
-            </div>
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-users cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sistem HR</div>
+            <p>Sistem sumber manusia untuk sebuah yayasan pendidikan: rekod pekerja, cuti dan pentadbiran.</p>
+            <div class="cc-tags"><span>PHP</span><span>JavaScript</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-money cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sistem Gaji</div>
+            <p>Portal slip gaji pekerja dalam bentuk PWA, termasuk fungsi lupa kata laluan.</p>
+            <div class="cc-tags"><span>PHP</span><span>PWA</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-university cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sistem Yuran Sekolah</div>
+            <p>Pengurusan yuran sekolah: invois yuran, bayaran dan rekod tunggakan pelajar.</p>
+            <div class="cc-tags"><span>PHP</span><span>MySQL</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-book cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">SPBT</div>
+            <p>Sistem pengurusan Skim Pinjaman Buku Teks: stok buku, pinjaman dan pemulangan.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-archive cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Fixed Assets</div>
+            <p>Aplikasi pengurusan aset tetap: daftar aset, lokasi dan rekod susut nilai.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-check-square-o cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Purchase Request</div>
+            <p>Permohonan pembelian dalaman dengan aliran kelulusan.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-line-chart cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sarep</div>
+            <p>Laporan jualan daripada banyak database syarikat dalam satu paparan.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span><span>SQL Accounting</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mgmt">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-file-text cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Sales Order</div>
+            <p>Sistem sales order untuk sebuah koperasi.</p>
+            <div class="cc-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-file-text-o cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">MyInvois e-Invoice</div>
+            <p>Web app e-Invois LHDN (MyInvois) yang menyokong banyak credential syarikat: jana, hantar dan semak status dokumen.</p>
+            <div class="cc-tags"><span>PHP</span><span>JavaScript</span><span>MyInvois API</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-download cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Export Invois LHDN</div>
+            <p>Tarik dan eksport senarai invois daripada portal MyInvois LHDN.</p>
+            <div class="cc-tags"><span>JavaScript</span><span>MyInvois API</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-search cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">MyTIN Lookup</div>
+            <p>Semakan nombor TIN pembayar cukai melalui API LHDN.</p>
+            <div class="cc-tags"><span>PHP</span><span>LHDN API</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-plug cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">SQL Accounting API</div>
+            <p>REST API untuk SQL Accounting (Firebird), dengan dokumentasi Swagger. Jadi asas integrasi untuk sistem lain.</p>
+            <div class="cc-tags"><span>Node.js</span><span>Firebird</span><span>Swagger</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-balance-scale cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Stock Take &amp; Adjustment</div>
+            <p>Modul kira stok dan pelarasan stok yang disambung ke SQL Accounting, termasuk app mobile untuk imbas barang.</p>
+            <div class="cc-tags"><span>PHP</span><span>Flutter</span><span>SQL Accounting</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-sign-in cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Login SQL Accounting &amp; Google</div>
+            <p>Modul login guna akaun pengguna SQL Accounting dan Google Sign-In, untuk satu atau banyak database.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span><span>OAuth</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-whatsapp cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">RoadTax Blaster</div>
+            <p>Peringatan roadtax automatik melalui WhatsApp (Baileys), disambung ke jualan tunai SQL Accounting.</p>
+            <div class="cc-tags"><span>PHP</span><span>Baileys</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-comments cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">WhatsApp API</div>
+            <p>Gateway WhatsApp untuk hantar mesej dan notifikasi daripada sistem lain.</p>
+            <div class="cc-tags"><span>PHP</span><span>CodeIgniter</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-envelope cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">SMS Blast</div>
+            <p>Hantar SMS pukal kepada pelanggan melalui API penyedia SMS.</p>
+            <div class="cc-tags"><span>PHP</span><span>JavaScript</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="api">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-bank cc-project-icon"></i><span class="badge cc-badge-public"><i class="fa fa-unlock"></i> Public</span></div>
             <div class="h5">Banking API</div>
-            <p>REST API perbankan ringkas: pengurusan akaun, deposit, pengeluaran dan pemindahan wang dengan rekod transaksi.</p>
-            <div class="cc-tags"><span>REST API</span><span>Auth</span><span>Database</span></div>
+            <p>REST API perbankan ringkas: akaun, deposit, pengeluaran dan pemindahan wang.</p>
+            <div class="cc-tags"><span>REST API</span></div>
           </div>
           <div class="card-footer bg-transparent border-0"><a href="https://github.com/ibnunasir/banking-api" target="_blank" rel="noopener"><i class="fa fa-github"></i> Lihat repo</a></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mobile">
         <div class="card cc-project h-100">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <i class="fa fa-file-text-o cc-project-icon"></i>
-              <span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span>
-            </div>
-            <div class="h5">e-Invoice Integration</div>
-            <p>Integrasi sistem invois dengan MyInvois (LHDN) &mdash; penjanaan dokumen UBL, tandatangan digital dan penghantaran automatik.</p>
-            <div class="cc-tags"><span>TypeScript</span><span>PHP</span><span>MyInvois</span></div>
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-credit-card cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">IziPOS Cashier</div>
+            <p>App juruwang Android/iOS untuk IziPOS: jualan di kaunter, bayaran dan cetak resit.</p>
+            <div class="cc-tags"><span>Flutter</span><span>Dart</span></div>
           </div>
-          <div class="card-footer bg-transparent border-0 text-muted"><i class="fa fa-lock"></i> Kod sumber private</div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mobile">
         <div class="card cc-project h-100">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <i class="fa fa-tachometer cc-project-icon"></i>
-              <span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span>
-            </div>
-            <div class="h5">Admin Dashboard</div>
-            <p>Papan pemuka admin dengan carta analitik, pengurusan pengguna dan laporan jualan masa nyata.</p>
-            <div class="cc-tags"><span>Next.js</span><span>React</span><span>Tailwind</span></div>
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-hand-paper-o cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">IziPOS Waiter</div>
+            <p>App pelayan untuk ambil pesanan di meja dan hantar terus ke dapur.</p>
+            <div class="cc-tags"><span>Flutter</span><span>Dart</span></div>
           </div>
-          <div class="card-footer bg-transparent border-0 text-muted"><i class="fa fa-lock"></i> Kod sumber private</div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mobile">
         <div class="card cc-project h-100">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <i class="fa fa-shopping-cart cc-project-icon"></i>
-              <span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span>
-            </div>
-            <div class="h5">Sistem Inventori &amp; POS</div>
-            <p>Sistem point-of-sale dan stok untuk kedai runcit &mdash; imbasan barcode, amaran stok rendah dan laporan harian.</p>
-            <div class="cc-tags"><span>Laravel</span><span>MySQL</span><span>JavaScript</span></div>
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-desktop cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">IziPOS Customer Display</div>
+            <p>Paparan pelanggan pada skrin kedua: senarai item dan jumlah bayaran secara langsung.</p>
+            <div class="cc-tags"><span>Flutter</span><span>Kotlin</span></div>
           </div>
-          <div class="card-footer bg-transparent border-0 text-muted"><i class="fa fa-lock"></i> Kod sumber private</div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="mobile">
         <div class="card cc-project h-100">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <i class="fa fa-calendar-check-o cc-project-icon"></i>
-              <span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span>
-            </div>
-            <div class="h5">Sistem Tempahan Online</div>
-            <p>Platform tempahan slot / janji temu dengan notifikasi e-mel, kalendar admin dan integrasi pembayaran.</p>
-            <div class="cc-tags"><span>PHP</span><span>Vue.js</span><span>Payment Gateway</span></div>
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-pie-chart cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Poketku</div>
+            <p>App aliran tunai peribadi ikut tempoh gaji bulanan. Semua data disimpan dalam peranti.</p>
+            <div class="cc-tags"><span>Flutter</span><span>Dart</span><span>Material 3</span></div>
           </div>
-          <div class="card-footer bg-transparent border-0 text-muted"><i class="fa fa-lock"></i> Kod sumber private</div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="other">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-gamepad cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Dunia Si Comel</div>
+            <p>17 permainan ringkas dalam Bahasa Melayu untuk kanak-kanak 3 tahun. PWA yang boleh dimain tanpa internet.</p>
+            <div class="cc-tags"><span>JavaScript</span><span>PWA</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="other">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-link cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Short Link</div>
+            <p>Penjana URL pendek dengan pautan tersuai.</p>
+            <div class="cc-tags"><span>Node.js</span><span>Docker</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="other">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-play-circle cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">NadiTube</div>
+            <p>Portal video tutorial untuk pelanggan.</p>
+            <div class="cc-tags"><span>JavaScript</span><span>HTML</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="other">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-folder-open cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">File Manager</div>
+            <p>Pengurus fail web dengan muat naik drag &amp; drop.</p>
+            <div class="cc-tags"><span>PHP</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 cc-project-col" data-cat="other">
+        <div class="card cc-project h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2"><i class="fa fa-globe cc-project-icon"></i><span class="badge cc-badge-private"><i class="fa fa-lock"></i> Private</span></div>
+            <div class="h5">Laman Web Korporat</div>
+            <p>Laman web syarikat dan organisasi, termasuk laman web Nadicom.</p>
+            <div class="cc-tags"><span>PHP</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="card-footer bg-transparent border-0"><span class="text-muted"><i class="fa fa-lock"></i> Kod sumber private</span></div>
         </div>
       </div>
     </div>

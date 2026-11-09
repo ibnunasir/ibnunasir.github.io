@@ -41,3 +41,15 @@ $('a.smooth-scroll')
     }
   }
 });
+
+// Portfolio category filter
+$(function () {
+  $('.cc-filter .btn').on('click', function () {
+    var f = $(this).data('filter');
+    $('.cc-filter .btn').removeClass('active');
+    $(this).addClass('active');
+    $('.cc-project-col').each(function () {
+      $(this).toggle(f === 'all' || $(this).data('cat') === f);
+    });
+  });
+});
