@@ -221,7 +221,6 @@ button { font: inherit; cursor: pointer; }
 .section { padding: 96px 0; }
 .section--alt { background: var(--bg-alt); }
 .section__head { max-width: 720px; margin-bottom: 48px; }
-.section__head--sm { margin: 72px 0 20px; }
 .section__head h2 { font-size: clamp(30px, 4.2vw, 46px); font-weight: 800; }
 .section__sub { margin-top: 14px; color: var(--text-2); font-size: 17px; }
 .eyebrow { font: 500 13px var(--font-mono); color: var(--accent); letter-spacing: .02em; margin-bottom: 14px; text-transform: uppercase; }
@@ -370,13 +369,6 @@ button { font: inherit; cursor: pointer; }
 .timeline h3 { font-size: 20px; margin: 6px 0 4px; }
 .timeline p { color: var(--text-2); font-size: 15px; }
 
-.refs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-.ref { display: flex; gap: 16px; align-items: center; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
-.ref img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex: none; }
-.ref h3 { font-size: 17px; }
-.ref p { font-size: 14px; color: var(--text-2); }
-.ref p.muted { font-size: 13px; color: var(--muted); margin-top: 2px; }
-@media (max-width: 720px) { .refs { grid-template-columns: 1fr; } }
 
 /* ============ Contact ============ */
 .contact {
@@ -432,7 +424,7 @@ button { font: inherit; cursor: pointer; }
   .section, .hero { padding: 16px 0; }
   .section--alt { background: none; }
   .js .reveal { opacity: 1; transform: none; }
-  .card, .skill, .timeline li, .facts li, .ref, .contact { break-inside: avoid; border-color: #ccc; }
+  .card, .skill, .timeline li, .facts li, .contact { break-inside: avoid; border-color: #ccc; }
   .grid { grid-template-columns: repeat(2, 1fr); }
   .card { animation: none; }
 }
