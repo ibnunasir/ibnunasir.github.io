@@ -431,3 +431,17 @@ button { font: inherit; cursor: pointer; }
 .more { margin-top: 24px; }
 .more [hidden] { display: none; }
 @media print { .more { display: none !important; } }
+
+/* ============ Floating WhatsApp ============ */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #25d366; color: #fff; font-size: 30px;
+  box-shadow: 0 8px 24px -6px rgba(37, 211, 102, .55), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.wa-float:hover { transform: scale(1.08); box-shadow: 0 12px 28px -6px rgba(37, 211, 102, .7), 0 2px 6px rgba(0, 0, 0, .2); }
+.wa-float:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+@media (max-width: 640px) { .wa-float { right: 16px; bottom: 16px; width: 52px; height: 52px; font-size: 28px; } }
+@media print { .wa-float { display: none !important; } }
